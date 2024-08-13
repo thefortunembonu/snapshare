@@ -47,7 +47,6 @@ function Feeds() {
         );
         const tmpData = await response.json();
         setfeeddata(tmpData);
-        console.log(tmpData);
       }
     } catch (err) {
       console.log(err);
@@ -90,10 +89,13 @@ function Feeds() {
           </span>
         </div>
         <hr className="dark:border dark:border-gray-700" />
-        <div className="pt-4">
+        <div className=" pt-4 ">
           {feedData.map((feed, index) => {
             return (
-              <div key={index} className="pb-8">
+              <div
+                key={index}
+                className="flex flex-col dark:bg-gray-900/50  bg-white   shadow-sm rounded-lg px-4 py-4"
+              >
                 <FeedCard
                   id={feed.id}
                   profileImg={feed.profile_img}

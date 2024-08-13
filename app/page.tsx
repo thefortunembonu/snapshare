@@ -1,5 +1,5 @@
 "use client";
-import Features from "@/components/sections/Features";
+
 import Hero from "../components/sections/Hero";
 import WhySnapShare from "../components/sections/WhySnapShare";
 import Community from "../components/sections/Community";
@@ -18,7 +18,6 @@ export default function Home() {
     <main>
       <Hero />
       <WhySnapShare />
-      <Features />
       <Community />
       <Footer />
     </main>

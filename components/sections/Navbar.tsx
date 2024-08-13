@@ -85,7 +85,11 @@ const Navbar = () => {
             alt={"logo_home"}
             className="w-full h-6 sm:h-8 cursor-pointer"
           />
-          <span className="gradient-text heading">SnapShare</span>
+          <Link href={"/"}>
+            <span className="gradient-text heading cursor-pointer">
+              SnapShare
+            </span>
+          </Link>
         </div>
         <div className="flex gap-5 items-center">
           {user ? (
@@ -109,7 +113,11 @@ const Navbar = () => {
             onClick={toggleOpen}
             className="text-4xl dark:text-white/40 cursor-pointer hover:scale-105"
           >
-            {open ? <IoClose /> : <FaBars />}
+            {open ? (
+              <IoClose className="text-gray-500" />
+            ) : (
+              <FaBars className="text-gray-500" />
+            )}
           </div>
         </div>
       </div>

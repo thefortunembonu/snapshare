@@ -2,54 +2,17 @@ import Image from "next/image";
 import React from "react";
 import { IoCloudUploadOutline } from "react-icons/io5";
 import { MdOutlineCollections } from "react-icons/md";
-import { MdOutlineEmojiEvents } from "react-icons/md";
 import { FaRegShareFromSquare } from "react-icons/fa6";
 import { GrIntegration } from "react-icons/gr";
-import { IoMdDownload } from "react-icons/io";
 
 const Features = () => {
   return (
-    <div className="  py-4 md:py-12 md:px-12 px-6">
+    <div className="py-4 md:py-12 md:px-12 px-6">
       <div className="my-4 md:my-8">
         <h1 className="heading">Features You&apos;ll Love</h1>
       </div>
-      <span className="flex justify-center gap-8 ">
-        <div className=" my-4 max-h-72 md:max-h-96 md:grid md:grid-cols-2 md:grid-rows-2 ">
-          <Image
-            src={"/images/sample9.jpg"}
-            alt={"_image"}
-            width={500}
-            height={200}
-            priority={true}
-            className="object-cover  dark:border-white/20 border-white border-2 rounded-s-lg md:h-full md:w-full md:border-none"
-          />
-
-          <Image
-            src={"/images/sample5.jpg"}
-            alt={"_image"}
-            width={500}
-            height={200}
-            priority={true}
-            className="object-cover  dark:border-white/20 border-white border-2 rounded-tr-lg md:border-none"
-          />
-          <Image
-            src={"/images/sample10.jpg"}
-            alt={"_image"}
-            width={500}
-            height={200}
-            priority={true}
-            className="object-cover dark:border-white/20 border-white border-2 md:border-none"
-          />
-          <Image
-            src={"/images/sample4.jpg"}
-            alt={"_image"}
-            width={500}
-            height={200}
-            priority={true}
-            className="object-cover  dark:border-white/20 border-white border-2 rounded-br-lg md:border-none"
-          />
-        </div>
-        <div className="flex gap-2 flex-wrap">
+      <div className="flex">
+        <div className="flex gap-2 flex-wrap ">
           <div className="card">
             <h2 className="subheading">
               <span>
@@ -100,41 +63,42 @@ const Features = () => {
             </p>
           </div>
         </div>
-      </span>
-      <div className="flex my-4 max-h-64 md:hidden ">
-        <Image
-          src={"/images/sample9.jpg"}
-          alt={"_image"}
-          width={200}
-          height={200}
-          priority={true}
-          className="object-cover dark:border-white/20 border-white border-2 rounded-s-lg"
-        />
-        <div className="">
+
+        <div className="flex my-4 max-h-96">
           <Image
-            src={"/images/sample5.jpg"}
+            src={"/images/sample9.jpg"}
             alt={"_image"}
             width={200}
             height={200}
             priority={true}
-            className="object-cover dark:border-white/20 border-white border-2 rounded-tr-lg"
+            className="object-cover dark:border-white/20 border-white border-2 rounded-s-lg"
           />
-          <Image
-            src={"/images/sample10.jpg"}
-            alt={"_image"}
-            width={200}
-            height={200}
-            priority={true}
-            className="object-cover dark:border-white/20 border-white border-2"
-          />
-          <Image
-            src={"/images/sample4.jpg"}
-            alt={"_image"}
-            width={200}
-            height={200}
-            priority={true}
-            className="object-cover dark:border-white/20 border-white border-2 rounded-br-lg"
-          />
+          <div className="min-h-64">
+            <Image
+              src={"/images/sample5.jpg"}
+              alt={"_image"}
+              width={300}
+              height={200}
+              priority={true}
+              className="object-cover dark:border-white/20 border-white border-2 rounded-tr-lg"
+            />
+            <Image
+              src={"/images/sample10.jpg"}
+              alt={"_image"}
+              width={300}
+              height={200}
+              priority={true}
+              className="object-cover dark:border-white/20 border-white border-2"
+            />
+            <Image
+              src={"/images/sample4.jpg"}
+              alt={"_image"}
+              width={200}
+              height={200}
+              priority={true}
+              className="object-cover dark:border-white/20 border-white border-2 rounded-br-lg"
+            />
+          </div>
         </div>
       </div>
       <hr className="mt-4 dark:border-white/20" />

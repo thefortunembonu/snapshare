@@ -43,8 +43,8 @@ function FeedEntry({ setOpen }: any) {
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="fixed dark:bg-gray-800 top-36 rounded-lg backdrop-blur-[0.25rem] w-[400px] py-12">
+    <div className="flex justify-center px-3">
+      <div className="fixed dark:bg-gray-800 top-36 rounded-lg backdrop-blur-[0.25rem] w-[350px] sm:max-w-[500px] py-12">
         <div className="flex justify-center">
           <button
             onClick={() => setOpen(false)}
